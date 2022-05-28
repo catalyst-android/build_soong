@@ -178,11 +178,6 @@ func Banner(make_vars map[string]string) string {
 	b := &bytes.Buffer{}
 
       fmt.Fprintln(b, "==========================================================================")
-      fmt.Fprintln(b, "*   ________ _________   ____  ____________  ____  ____                   ")
-      fmt.Fprintln(b, "*  / ___/ _ /_  __/ _ | / /\ \/ / __/_  __/ / __ \/ __/                   ")
-      fmt.Fprintln(b, "* / /__/ __ |/ / / __ |/ /__\  /\ \  / /   / /_/ /\ \                     ")
-      fmt.Fprintln(b, "* \___/_/ |_/_/ /_/ |_/____//_/___/ /_/    \____/___/                     ")
-	  fmt.Fprintln(b, "*                                                                         ")
       fmt.Fprintln(b, "* WELCOME TO CATALYST OS BUILD SYSTEM                                     ")
       fmt.Fprintln(b, "==========================================================================")
       fmt.Fprintf(b, "%s=%s\n", "CATALYST_VERSION", make_vars["CATALYST_VERSION"])
